@@ -56,7 +56,7 @@ about:
   home: http://dkist.nso.edu
   summary: DKIST User Tools
   license: BSD-3-Clause
-  license_file: licenses/LICENSE.rst
+  license_file: LICENSE.rst
   dev_url: https://github.com/DKISTDC/dkist
 
 extra:
