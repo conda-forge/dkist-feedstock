@@ -52,7 +52,7 @@ test:
     - dkist
   commands:
     - pip check
-    - pip install dkist-data-simulator
+    - pip install dkist-data-simulator dkist-inventory
     - pytest --pyargs dkist
 
 about:
