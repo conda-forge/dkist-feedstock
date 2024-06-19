@@ -1,5 +1,5 @@
 {% set name = "dkist" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dkist-{{ version }}.tar.gz
-  sha256: f28131a0dd6f84f95fecfd56b06159143f6ed631b6f196b52e805e04a333fada
+  sha256: e75545137d4d5eb119ca9ee161b9592fa51772c7fd2b220eb91531d85f8799ea
 
 build:
   noarch: python
@@ -51,6 +51,7 @@ test:
     - pytest-mpl
     - pytest-httpserver
     - pytest-astropy
+    - pytest-benchmark
     - hypothesis
   imports:
     - dkist
