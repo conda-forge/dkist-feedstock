@@ -51,6 +51,7 @@ test:
     - pytest-mpl
     - pytest-httpserver
     - pytest-astropy
+    - pytest-benchmark
     - hypothesis
   imports:
     - dkist
