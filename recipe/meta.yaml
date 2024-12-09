@@ -31,7 +31,7 @@ requirements:
     - asdf-transform-schemas >=0.3.0
     - asdf-unit-schemas >=0.1.0
     - asdf-wcs-schemas >=0.3.0
-    - astropy >=5.3
+    - astropy-base >=5.3
     - dask-core >=2021.8.0
     - globus-sdk >=3.0
     - gwcs >=0.19.0
