@@ -1,5 +1,5 @@
 {% set name = "dkist" %}
-{% set version = "1.9.0" %}
+{% set version = "1.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dkist-{{ version }}.tar.gz
-  sha256: 1033b7fa4bc1c2e73a5ce865985746aeb842e3f84c80aec4979835fda76a2e61
+  sha256: 8f746853cbed75298356df0cfa22c8792ba000890d8df6035e75f6f4cb458d02
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
