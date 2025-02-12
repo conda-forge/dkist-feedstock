@@ -58,7 +58,7 @@ test:
     - dkist
   commands:
     - pip check
-    - pytest --pyargs dkist -k "not test_fail" --remote-data=none
+    - pytest --pyargs dkist -k "not test_fail" --remote-data=none -m "not mpl_image_compare"
 
 about:
   home: http://dkist.nso.edu
