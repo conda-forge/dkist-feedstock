@@ -1,5 +1,5 @@
 {% set name = "dkist" %}
-{% set version = "1.9.2" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dkist-{{ version }}.tar.gz
-  sha256: 781b18f0237b398457dc7d16b159fe4b423aa03f0a9f156f894e021ea252538b
+  sha256: 39360bab247368874fe40fa5e46b7209369ec41c8ed3eb085528caf7d0aedc17
 
 build:
   noarch: python
@@ -58,7 +58,7 @@ test:
     - dkist
   commands:
     - pip check
-    - pytest --pyargs dkist -k "not test_fail"
+    - pytest --pyargs dkist -k "not test_fail" --remote-data=none -m "not mpl_image_compare"
 
 about:
   home: http://dkist.nso.edu
