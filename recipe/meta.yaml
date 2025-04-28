@@ -48,11 +48,13 @@ test:
     - python {{ python_min }}
     - pip
     - pytest
+    - pytest-doctestplus
+    - pytest-remotedata
     - pytest-mock
     - pytest-mpl
     - pytest-httpserver
-    - pytest-astropy
     - pytest-benchmark
+    - pytest-lazy-fixtures
     - hypothesis
   imports:
     - dkist
