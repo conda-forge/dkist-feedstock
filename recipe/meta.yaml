@@ -36,7 +36,7 @@ requirements:
     - gwcs >=0.24.0
     - matplotlib-base >=3.7
     - ndcube >=2.1
-    - reproject >=0.7.1. # ndcube reproject extra
+    - reproject >=0.7.1 # ndcube reproject extra
     - numpy >=1.25
     - parfive >=2.2
     - platformdirs >=3.0
