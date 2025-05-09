@@ -1,5 +1,5 @@
 {% set name = "dkist" %}
-{% set version = "1.12.0" %}
+{% set version = "1.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dkist-{{ version }}.tar.gz
-  sha256: a5d52592b2a074855e8dd2e21b680792122d6926c067daa9364141d279b186f4
+  sha256: 5dac6172dfded02e31208f3e553c8dc61e1478793036f2e882eb45435daab61e
 
 build:
   noarch: python
@@ -23,25 +23,25 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - aiohttp >=3.6
-    - asdf >=2.11.0
-    - asdf-astropy >=0.2.0
-    - asdf-coordinates-schemas >=0.1.0
-    - asdf-standard >=1.0.3
-    - asdf-transform-schemas >=0.3.0
-    - asdf-unit-schemas >=0.1.0
-    - asdf-wcs-schemas >=0.3.0
-    - astropy-base >=5.3
-    - dask-core >=2021.8.0
+    - aiohttp >=3.9
+    - asdf >=3.3.0
+    - asdf-astropy >=0.5.0
+    - asdf-coordinates-schemas >=0.3.0
+    - asdf-standard >=1.1.0
+    - asdf-transform-schemas >=0.5.0
+    - asdf-wcs-schemas >=0.4.0
+    - astropy-base >=6.0
+    - dask-core >=2023.2.0
     - globus-sdk >=3.0
-    - gwcs >=0.19.0
-    - matplotlib-base >=3.5
-    - ndcube >=2.0
-    - numpy >=1.22
-    - parfive >=1.5
+    - gwcs >=0.24.0
+    - matplotlib-base >=3.7
+    - ndcube >=2.1
+    - reproject >=0.7.1 # ndcube reproject extra
+    - numpy >=1.25
+    - parfive >=2.2
     - platformdirs >=3.0
-    - sunpy >=4.0.7
-    - tqdm  >=4.63
+    - sunpy >=5.0.7
+    - tqdm  >=4.65
 
 test:
   requires:
