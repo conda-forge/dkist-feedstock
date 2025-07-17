@@ -1,5 +1,5 @@
 {% set name = "dkist" %}
-{% set version = "1.13.0" %}
+{% set version = "1.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dkist-{{ version }}.tar.gz
-  sha256: 5dac6172dfded02e31208f3e553c8dc61e1478793036f2e882eb45435daab61e
+  sha256: ca1bea4f264f20880aee2f1ae7ebcde647dee7923baa67a4b0f6b2645e7e3018
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
     - asdf-astropy >=0.5.0
     - asdf-coordinates-schemas >=0.3.0
     - asdf-standard >=1.1.0
-    - asdf-transform-schemas >=0.5.0
+    - asdf-transform-schemas >=0.6.0
     - asdf-wcs-schemas >=0.4.0
     - astropy-base >=6.0
     - dask-core >=2023.2.0
