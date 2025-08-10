@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -59,7 +59,7 @@ test:
   imports:
     - dkist
   commands:
-    # - pip check  - this is failing due to a pyavm (reproject dep)
+    - pip check  - this is failing due to a pyavm (reproject dep)
     - pytest --pyargs dkist -k "not test_fail" --remote-data=none -m "not mpl_image_compare"
 
 about:
