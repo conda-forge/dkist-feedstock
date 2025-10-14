@@ -55,6 +55,7 @@ test:
     - pytest-httpserver
     - pytest-benchmark
     - pytest-lazy-fixtures
+    - pytest-asdf-plugin
     - hypothesis
   imports:
     - dkist
