@@ -1,13 +1,13 @@
 {% set name = "dkist" %}
-{% set version = "1.17.0" %}
+{% set version = "1.18.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dkist-{{ version }}.tar.gz
-  sha256: ff16ab1f25b454255ef35e232b6785b1acc06ca29ca26d18a84ffaf023f537c4
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/dkist-{{ version }}.tar.gz
+  sha256: ac11cedb91a5b1abd76824c6b9f898e6fbb57109d8d5e91d5286750c63a46cbd
 
 build:
   noarch: python
