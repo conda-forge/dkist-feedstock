@@ -1,13 +1,13 @@
 {% set name = "dkist" %}
-{% set version = "1.17.0" %}
+{% set version = "1.18.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dkist-{{ version }}.tar.gz
-  sha256: ff16ab1f25b454255ef35e232b6785b1acc06ca29ca26d18a84ffaf023f537c4
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/dkist-{{ version }}.tar.gz
+  sha256: 4557423bc16b0d8930400cf454dbd66ea6fb087eff73ad9207335208a8a0de4c
 
 build:
   noarch: python
@@ -24,9 +24,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - aiohttp >=3.9
-    - asdf >=3.3.0
-    - asdf-astropy >=0.5.0
-    - asdf-coordinates-schemas >=0.3.0
+    - asdf >=4.0.0
+    - asdf-astropy >=0.11.0
+    - asdf-coordinates-schemas >=0.4.0
     - asdf-standard >=1.1.0
     - asdf-transform-schemas >=0.6.0
     - asdf-wcs-schemas >=0.4.0
@@ -37,10 +37,10 @@ requirements:
     - matplotlib-base >=3.7
     - ndcube >=2.1
     - reproject >=0.7.1 # ndcube reproject extra
-    - numpy >=1.25
+    - numpy >=1.26.4
     - parfive >=2.2
     - platformdirs >=3.0
-    - sunpy >=5.0.7
+    - sunpy >=6
     - tqdm  >=4.65
 
 test:
